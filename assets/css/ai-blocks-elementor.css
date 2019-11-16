@@ -1,0 +1,124 @@
+/* PHOTOSWIPE */
+
+@media (max-width: 767px) {
+    .gallery_col-mobile-1 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 1);
+    }
+    .gallery_col-mobile-2 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 2);
+    }
+    .gallery_col-mobile-3 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 3 - 0.1px);
+    }
+    .gallery_col-mobile-4 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 4);
+    }
+    .gallery_col-mobile-5 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 5);
+    }
+    .gallery_col-mobile-6 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 6);
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .gallery_col-tablet-1 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 1);
+    }
+    .gallery_col-tablet-2 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 2);
+    }
+    .gallery_col-tablet-3 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 3 - 0.1px);
+    }
+    .gallery_col-tablet-4 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 4);
+    }
+    .gallery_col-tablet-5 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 5);
+    }
+    .gallery_col-tablet-6 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 6);
+    }
+}
+@media (min-width: 1025px) {
+    .gallery_col-1 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 1);
+    }
+    .gallery_col-2 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 2);
+    }
+    .gallery_col-3 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 3 - 0.1px);
+    }
+    .gallery_col-4 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 4);
+    }
+    .gallery_col-5 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 5);
+    }
+    .gallery_col-6 .gallery_block_gallery .psgal .msnry_item {
+        width: calc(100% / 6);
+    }
+}
+
+
+
+.gallery_block_gallery .psgal .msnry_item {
+    height: auto !important;
+}
+
+.psgal {
+    width: 100% !important;
+}
+
+.psgal a:before {
+    content: '';
+    position: absolute;
+    opacity: 0;
+	transition: all 0.2s;
+}
+.psgal a:after {
+	content: '';
+	font-family: 'eicons';
+    position: absolute;
+    top: 50%; 
+	left: 50%;
+	transform: translate(-50%, calc(-50% + 5px));
+    opacity: 0;
+    transition: all 0.2s;
+}
+.psgal a:hover:after {
+	opacity: 1;
+	transition: all 0.4s;
+	transform: translate(-50%, -50%);
+}
+.psgal a:hover:before {
+	opacity: 1;
+	transition: all 0.2s;
+}
+@media (max-width: 1024px) { 
+	.psgal a:before,
+	.psgal a:after {
+		display: none;
+	}
+}
+
+
+.pswp__button--share,
+.pswp__button--zoom,
+.pswp__button--fs {
+	display: none !important;
+}
+.pswp--touch .pswp__button--arrow--left,
+.pswp--touch .pswp__button--arrow--right {
+	visibility: visible;
+}
+@media (max-width: 768px) {
+	.pswp__button--fs {
+		display: block !important; 
+	}
+}
+.pswp {
+    z-index: 9999999999;
+}
+/*  END PHOTOSWIPE */
